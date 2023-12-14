@@ -1,0 +1,155 @@
+/* === HEADING STYLE #2 === */
+
+@media screen and (max-width: 767px) {
+    #sidebar-body span {
+        display: none !important;
+        /* width: 100%; The width is 100%, when the viewport is 800px or smaller */
+    }
+    #sidebarmain {
+        /*width: 50px !important;*/
+        font-size: x-large;
+    }
+    #sidebar-body li{
+        width: auto;
+        text-align: center;
+        padding: 0;
+    }    
+    #plotlygraph {
+        height: 400px;
+    }
+}
+@media screen and (max-width: 575px) {
+    #sidebar-body span {
+        display: none !important;
+        /* width: 100%; The width is 100%, when the viewport is 800px or smaller */
+    }
+    #sidebar-body > li {
+        display: inline-block;
+        width: 40px;
+    }
+}
+#plotlygraph {
+    height: 600px;
+}
+
+#sidebar-body li {
+    padding: 5px;
+}
+
+#sidebar-body li > i{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+/*#currtemperature span:first-child{
+    display: inline-block;
+    width: 250px;
+    font-weight: bold;
+}*/
+.header {
+    cursor:default;
+}
+
+#sidebar-body li {
+    cursor:pointer ; 
+}
+
+#sidebar-body li:hover {
+    background-color: rgb(150, 239, 239);
+    border: 1px solid skyblue;
+ }
+
+#sidebarmain {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(223, 244, 244);
+}
+
+
+#sidebar-body{
+    top: 5%;
+    padding-left: 0;
+    padding-right: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    list-style: none;
+}
+.w11 {
+    display: none !important;
+}
+
+.header {
+    background-color: rgb(244, 243, 243);
+    padding: 0;
+}
+.header h1 {
+    position: relative;
+    padding: 15;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    color: #080808;
+    text-transform: capitalize;
+    text-align:center;
+    }
+  
+.header h1 span {
+    text-align:center;
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    color: rgba(60, 33, 33, 0.4);
+    padding-bottom: 10px;
+  }
+.header h1:after {
+    position: absolute;
+    bottom: 0;
+    width:6%;
+    height: 2px;
+    content: "";
+    background-color: #c50000;
+    left: 47%; 
+  }
+
+#horbar {
+    height: 2px;
+    width: 100%;
+    content: "";
+    background-color: #c50000;
+
+}
+
+
+  /* Something else */
+#moveme {
+    position: relative;
+}
+
+#draggable { 
+    width: 250px;
+}
+
+#date {
+    margin: 10px;
+}
+
+.blue {
+    color: blue;
+    background-color: beige;
+}
+.a12{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
