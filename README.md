@@ -15,4 +15,7 @@ This repo contains the html/css/js for reviewing the logged data.
 The logged files can be found in the src folder.
 The data is written in plain text, next time i shall use JSON immediatly.
 
+You can access a online version, hosted by Github <3, here:
+https://p4sc41a.github.io/
+
 Pascal
