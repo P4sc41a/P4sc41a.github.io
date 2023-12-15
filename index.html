@@ -37,9 +37,10 @@
       
       <!-- Header-->
       <div class="header">
-              <h1>My FrontEnd
+              <h1>My Rasplogger
                 <span>Made by Pascal!</span>
               </h1>
+              <div class=" horbar mb-2"></div>
       </div>       
 
       <!--Page with sidebar-->
@@ -64,7 +65,7 @@
               </li>
               <li id="menu3" class="menuhovercol">                   
                 <i class="fa fa-search py-2"></i>
-                <span class="w10">Detail view</span>
+                <span class="w10">Detail</span>
               </li>
               <li id="menu4" class="menuhovercol">                   
                 <i class="fa fa-cog py-2"></i>
@@ -74,9 +75,9 @@
         </div>
 
         <!-- Page content -->
-        <div class="pagebody col ">
+        <div class="pagebody col">
               <!-- Plotly chart will be drawn inside this DIV 'tester' -->
-              <div class="pt-1">
+              <div class="pt-1 mb-4">
 
                 <div id="mainMenuContent">
                   <div id="currtemperature" class="">
@@ -93,40 +94,50 @@
 
                 <!--The plot area, selector/graph, slider and buttons-->
                 <div id="plotContent" class="">
-                  <div id="deviceselector" class="w11 pb-2">
-                    <p>Please choose a device:</p>
-                    <select id="deviceselector2" class="" aria-label="select">
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
                   
                   <div id="plotlygraph" class="">
                   </div>
 
-                  <div class="row my-2">
-                    <div class="slidecontainer col-5">
-                      <label for="myRange">Date range:</label>
-                      <input type="range" min="0" max="99" 
-                      value="0" class="slider" id="myRange">
+                  <div id="dateModifier" class="d-flex flex-row align-items-center">
+                    <div class="m-1">
+                      <label for="myDateRange">Date range:</label>
+                      <input type="range" min="0" max="999" 
+                       class="slider" id="myDateRange">
                     </div>
-                    <button class="btn btn-primary col-1 mx-2 p-0">all</button>
-                    <button class="btn btn-primary col-1 mx-2 p-0">4w</button>
-                    <button class="btn btn-primary col-1 mx-2 p-0">1w</button>
-                    <button class="btn btn-primary col-1 mx-2 p-0">1d</button>
+                    <button id="changeTimeaxis-a" class="btn btn-light m-1">all</button>
+                    <button id="changeTimeaxis-4" class="btn btn-light m-1">4w</button>
+                    <button id="changeTimeaxis-1" class="btn btn-light m-1">1w</button>
+                    <button id="changeTimeaxis-d" class="btn btn-light m-1">1d</button>
                   </div>
+
+                  <div id="deviceselector" class="w11 pb-2">
+                    <label for="deviceselector2">Please choose a device:</label>
+                    <select id="deviceselector2" class=" form-control" aria-label="select">
+                      
+                    </select>
+                  </div>
+
 
                       
                 </div>     
               
+
+                <div id="settingsContent">
+                  <h4 class="pt-2">Settings</h4>
+                  <div class="">
+                    <button class="ui-button ui-widget ui-corner-all" 
+                    type="button" id = "moveme" onclick="$(this).animate({left:'+=30px'},150)">Click me</button>
+                  </div>
+                  
+                  <h5 id="deviceNames" class="mt-2">Device names</h5>
+
+                  <button id="saveNames" type="button" class="btn btn-light">Save new names</button>
+
+                </div>
+
               </div>
 
-              <div class="col-2 mb-5">
-                  <button class="ui-button ui-widget ui-corner-all" 
-                  type="button" id = "moveme" onclick="$(this).animate({left:'+=6%'},150)">Click me</button>
-              </div>
+
         </div>
 
       </div>
